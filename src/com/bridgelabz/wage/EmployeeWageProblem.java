@@ -6,10 +6,10 @@ public class EmployeeWageProblem {
         int empHour  = 0;
         int empWageHr = 20;
         int empPartTime = 2;
-      //  int totalWage = 0;
-      //  int totalHour = 0;
+        int totalWage = 0;
+        int totalHour = 0;
 
-      //  for(int i=0;i<20;i++) {
+        for(int i=0;i<20;i++) {
 
 
             int employee_check = (int)(Math.random() * 10) % 3;
@@ -38,13 +38,13 @@ public class EmployeeWageProblem {
                     break;
             }
             int wage = empHour * empWageHr;
-          //  totalHour = totalHour+empHour;
-         //   totalWage= totalWage+wage;
+           totalHour = totalHour+empHour;
+          totalWage= totalWage+wage;
             System.out.println(wage);
-        //}
+        }
 
-            //System.out.println(totalHour);
-            //System.out.println(totalWage);
+            System.out.println(totalHour);
+            System.out.println(totalWage);
 
     }
 }
