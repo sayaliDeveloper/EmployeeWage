@@ -1,11 +1,12 @@
 package com.bridgelabz.wage;
 
 public class EmployeeWageProblem {
-   public static final int IS_FULL_TIME = 1;
-    public static final int EMP_PART_TIME = 2;
-    public static final int empWageHr = 20;
 
-    public static void calculateEmployeeWage(int empRate,int numDays,int MaxHours){
+
+    public static void calculateEmployeeWage(String CompanyName,int empRate,int numDays,int MaxHours,int empWageHr){
+        int is_Full_Time = 1;
+        int emp_Part_Time = 2;
+       // int empWageHr = 20;
         int empHour  = 0;
         int totalWage = 0;
         int totalHour = 0;
@@ -43,7 +44,8 @@ public class EmployeeWageProblem {
 
 
     public static void main(String[] args) {
-         calculateEmployeeWage(20,2,10);
+         calculateEmployeeWage("Dmart",20,2,10,20);
+        calculateEmployeeWage("UCmart",20,4,20,10);
 
 
     }
